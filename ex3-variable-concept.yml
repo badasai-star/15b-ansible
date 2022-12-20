@@ -17,7 +17,7 @@
         path: /opt/variables/concept.txt
         state: touch
 
-    - name: code to write a message into the file
+    - name: code to write a message into the file file file
       lineinfile:
         path: /opt/variables/concept.txt
         state: present
