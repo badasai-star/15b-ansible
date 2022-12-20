@@ -17,3 +17,4 @@
        path: /opt/india/russia.txt
        line: 'HELLO WORLD'
        state: present
+

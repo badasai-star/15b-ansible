@@ -1,0 +1,24 @@
+-
+  name: play on variables concept
+  host: all
+  vars:
+    a: 10
+    b: 20.50
+    c: 'AP28DC0505'
+    d: "welcome to india"
+  tasks:
+    - name: code to create a directory
+      file:
+        path: /opt/variables
+        state: directory
+    
+    - name: code to create a file into that directory
+      file:
+        path: /opt/variables/concept.txt
+        state: touch
+
+    - name: code to write a message into the file
+      lineinfile:
+        path: /opt/variables/concept.txt
+        state: present
+        line: 'The value of a is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}'
