@@ -1,6 +1,6 @@
 -
   name: play on variables concept
-  host: all
+  hosts: all
   vars:
     a: 10
     b: 20.50
