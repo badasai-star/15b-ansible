@@ -1,5 +1,5 @@
 -
-  name: play on variables concept
+  name: Play on variables concept for ansible project
   hosts: all
   vars:
     a: 10
