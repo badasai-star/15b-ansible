@@ -1,0 +1,19 @@
+-
+  name: playone
+  hosts: client1
+  tasks:
+    - name: code to create a directory
+      file:
+      path: /opt/india
+      state: directory
+
+    - name: code to create a file
+      file:
+       path: /opt/india/russia.txt
+       state: touch
+
+    - name: code to write a message into the file
+      lineinfile:
+      path: /opt/india/russia/.txt
+      line: 'HELLO WORLD'
+      state: present
